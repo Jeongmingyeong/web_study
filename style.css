@@ -1,0 +1,56 @@
+body {
+    width: 100vw;
+    height: 200hw;
+    overflow-x: hidden;
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title { /* class 속성값이 title 인 애의 속성 지정 */
+    text-align: center;
+    color: palevioletred;
+    font-family: 'Caveat', cursive;
+}
+
+.introduce {
+    width: 100vw;
+    height: 100vh;
+    display: flex; /* div 는 아무것도 안쓰면 아래로 붙고, 이러한 정의를 하면 옆으로 붙음. */
+    justify-content: space-around; /* flex 방향에 따른 정렬 (row) */
+    align-items: center; /* flex 방향의 수직에 따른 정렬 (col) */
+}
+
+.introduceText {
+    color: rgb(255, 134, 174);
+}
+
+.introduceTextFirst {
+    font-size: 2vw;
+    font-weight: 500; /* 글씨 bold */
+    margin: 2vh 0;
+}
+
+.introduceTextSecond {
+    font-size: 6vw;
+    font-weight: 700; /* 글씨 bold */
+    margin: 2vh 0;
+}
+
+.introduceTextThird {
+    font-size: 3vw;
+    font-weight: 600; /* 글씨 bold */
+    margin: 2vh 0;
+}
+
+.introduceTextFourth {
+    font-size: 2vw;
+    font-weight: 500; /* 글씨 bold */
+    font-family: 'Caveat', cursive;
+    margin: 2vh 0;
+}
+
+.introduceImage {
+    width: 20vw;
+    height: 20vw;
+}
