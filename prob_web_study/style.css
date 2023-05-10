@@ -54,3 +54,131 @@ body {
     width: 20vw;
     height: 20vw;
 }
+
+.wrapContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #FAA8A8;
+    border: 2px solid #FAA8A8;
+    margin-right: 5vw;
+    margin-left: 1vw;
+    border-radius: 3vw; /* container 의 테두리 곡선(?) */
+    padding: 2vw;
+    box-shadow: 0.2px 3px 2px red; /* 양옆 : 0.2px, 상 : 3px, 하 : 2px 만큼의 그림자를 주겠다 */
+    cursor: pointer; /* container 에 마우스 올렸을 때 클릭하려는 마우스로 바뀜 */
+}
+
+#favoriteContainer { /* id 를 불러오기 위해서는 #을 사용. */
+    display: none;
+}
+
+#favorite {
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: 600;
+    color: black;
+}
+
+.favoriteItems {
+    width: 15vw;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* 원을 만들기 위함. */
+    background-color: #d7bde2;
+    margin: 3vw;
+    padding: 2vw;
+}
+
+.favoriteItem {
+    width: 11vw;
+    height: 10vh;
+}
+
+.favoriteText {
+    width: 5vw;
+    height: 2.5vh;
+    text-align: center;
+}
+
+#musicContainer {
+    width: 40vw;
+    height: 30vh;
+    margin-left: 2vw;
+    display: none;
+}
+
+#musicContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+.musicItemContainer {
+    width: 35vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-bottom: 3vh;
+    border: 1.8px solid #FF4646;
+    border-radius: 5vw;
+}
+
+.musicItemContainer:hover { /* 마우스를 올려놓는 것 (클릭하기 전) */
+    background-color: rgba(0,0,0,0.5); /* 순서대로 r, g, b, 투명도 */
+    color: white;
+}
+
+.musicItemContainer img {
+    width: 8vw;
+    height: 8vh;
+    border-radius: 50%;
+}
+
+#mbtiContainer {
+    display: none;
+}
+
+#mbtiContent {
+    display: flex;
+    flex-direction: column;
+}
+
+#mbtiImgContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+#mbti {
+    font-size: 11vw;
+    font-family: fantasy;
+    margin-top: 2vw;
+    margin-bottom: -2vw;
+    margin-left: 6vw;
+    margin-right: 2vw;
+    padding: 2vw;
+}
+
+#mbtiImg {
+    width: 100%;
+    height: 65%;
+}
+
+#mbtiDes {
+    font-size: 1.3vw;
+    font-family: 'Caveat' cursive;
+}
